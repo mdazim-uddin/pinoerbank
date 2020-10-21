@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PioneerBank</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+
+	<div class="container">
+		
+		
+			<div class="header-text">
+			<h1 class="text-center"> welcome to Pioneer Bank </h1>
+		</div>
+
+		<div id="loginArea" class="submit-area">
+			<h4>Log in</h4>
+
+			<input type="text" class="form-control" placeholder="Email" name="">
+			<br>
+			<input type="password" placeholder="Password" class="form-control" name="">
+			<br>
+			<button class="btn btn-success" id="login">Enter</button>
+		</div>
+		<div id="trangition">
+			<div class="row">
+				<div class="col-md-4 ">
+					<div class="deposite status">
+					<h5>Deposite</h5>
+					<h2>$<span id="currentDeposite">00</span></h2>
+					</div>
+				</div>
+				<div class="col-md-4 ">
+				<div class="Withdraw  status">
+					<h5>Withdraw</h5>
+					<h2>$<span id="currentwithdraw">00</span></h2>
+				</div>
+				</div>
+
+				<div class="col-md-4 ">
+					<div class="Blance status">
+					<h5>Blance</h5>
+					<h2>$<span id="Balance">1240</span></h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="submit-area">
+						<h4>Deposite</h4>
+					<input id="depositeAmount" type="text" class="form-control" placeholder="$ amount you want to deposite" name="">
+					<br>
+					<button id="DepositeBtn" class="btn btn-success">Deposite</button>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="submit-area">
+						<h4>Withdraw</h4>
+					<input id="withdrawAmount" type="text" class="form-control"placeholder="$ amount you want to Withdraw" name="">
+					<br>
+					<button id="WithdrawBtn" class="btn btn-success">Withdraw</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<script src="js/custom.js"></script>
+</body>
+</html>
